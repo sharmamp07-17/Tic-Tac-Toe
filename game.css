@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #662dd9;
+  color: #ffffff;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+
+h1 {
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.game-box {
+  margin: auto;
+  padding: 30px 50px 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+}
+
+.box {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 30px;
+  height: 80px;
+  cursor: pointer;
+}
+
+.box:hover {
+  background-color: #000;
+  transition: 0.5s all;
+}
+
+button {
+  width: auto;
+  margin: auto;
+  font-weight: bolder;
+  padding: 10px 30px;
+  font-size: 20px;
+  background-color: goldenrod;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.win {
+  background-color: lightgreen;
+}
+
+span {
+  margin: auto;
+  width: fit-content;
+  padding: 8px 20px;
+  background: rgb(240, 68, 102);
+  font-size: 20px;
+  border-radius: 8px;
+  letter-spacing: 0.5px;
+}
+.disable{
+  user-select: none;
+}
+
+h3{
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
